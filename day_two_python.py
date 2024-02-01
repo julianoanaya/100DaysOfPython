@@ -9,3 +9,6 @@ print(123 + 345)
 
 # float
 3.1459
+# boolean
+True
+False
