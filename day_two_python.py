@@ -32,3 +32,4 @@
 
 print("Welcome to the tip calculator!")
 bill = float(input("What was the total bill? $"))
+tip = float(input("What % tip would you want to tip?")) / 100
