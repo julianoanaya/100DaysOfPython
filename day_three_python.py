@@ -22,3 +22,13 @@ elif bmi >= 30 and bmi < 35:
     print(f"Your BMI is {bmi}, you are obese.")
 elif bmi >= 35:
     print(f"Your BMI is {bmi}, you are clincally obese.")
+
+# Which year do you want to check?
+year = int(input())
+# 🚨 Don't change the code above 👆
+
+# Write your code below this line 👇
+if year % 4 == 0 and year % 100 != 00 or year % 400 == 00:
+    print("Leap year")
+else:
+    print("Not leap year")
