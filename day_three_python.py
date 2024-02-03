@@ -58,3 +58,35 @@ if extra_cheese == "Y":
 else:
     bill += 0
 print(f"Your final bill is: ${bill}.")
+
+print("The Love Calculator is calculating your score...")
+name1 = input()  # What is your name?
+name2 = input()  # What is their name?
+# 🚨 Don't change the code above 👆
+# Write your code below this line 👇
+name_together = name1 + name2
+small_name = name_together.lower()
+t = small_name.count("t")
+r = small_name.count("r")
+u = small_name.count("u")
+e = small_name.count("e")
+digit_1 = t + r + u + e
+l = small_name.count("l")
+o = small_name.count("o")
+v = small_name.count("v")
+e = small_name.count("e")
+
+digit_2 = l + o + v + e
+
+score = int(str(digit_1) + str(digit_2))
+
+# print(f"Your score is {score}")
+
+if score < 10:
+    print(f"Your score is {score}, you go together like coke and mentos.")
+elif score > 90:
+    print(f"Your score is {score}, you go together like coke and mentos.")
+elif score > 40 and score < 50:
+    print(f"Your score is {score}, you are alright together.")
+else:
+    print(f"Your score is {score}.")
