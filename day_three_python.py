@@ -115,3 +115,13 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 '''
 )
 print("Welcome to treasure island! Let's start the game")
+print("Your mission is find the treasure")
+print("You see two door. Do you into the Left or Right?")
+answer_1 = input()
+if answer_1 == "Right":
+    print("You fall into a hole and die. Good Game.")
+else:
+    print("You chose the right door! Nice!")
+print(
+    "You see a door. But it is you have to cross a River. Do you wait fot a boat or do you swim to it?"
+)
