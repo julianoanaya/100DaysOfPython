@@ -1,34 +1,34 @@
-import random
+# import random
 
-# import my_module
+# # import my_module
 
-
-random_integer = random.randint(1, 10)
-print(random_integer)
-# print(my_module.pi)
-random_float = random.random()
-print(random_float)
 
 # random_integer = random.randint(1, 10)
 # print(random_integer)
 # # print(my_module.pi)
-# random_float = random.random() * 5
+# random_float = random.random()
 # print(random_float)
 
-# love_score = random.randint(1, 100)
-# print(f"Your love score is {love_score}")
+# # random_integer = random.randint(1, 10)
+# # print(random_integer)
+# # # print(my_module.pi)
+# # random_float = random.random() * 5
+# # print(random_float)
 
-names = names_string.split(", ")
-# The code above converts the input into an array seperating
-# each name in the input by a comma and space.
-# 🚨 Don't change the code above 👆
-# print(len(names))
-import random
+# # love_score = random.randint(1, 100)
+# # print(f"Your love score is {love_score}")
 
-nuber_of_people = len(names) - 1
-random_int = random.randint(0, nuber_of_people)
-person_chosen = names[random_int]
-print(f"{person_chosen} is going to buy the meal today!")
+# names = names_string.split(", ")
+# # The code above converts the input into an array seperating
+# # each name in the input by a comma and space.
+# # 🚨 Don't change the code above 👆
+# # print(len(names))
+# import random
+
+# nuber_of_people = len(names) - 1
+# random_int = random.randint(0, nuber_of_people)
+# person_chosen = names[random_int]
+# print(f"{person_chosen} is going to buy the meal today!")
 
 
 rock = """
@@ -62,9 +62,17 @@ scissors = """
 
 import random
 
-# User input
+image = [rock, paper, scissors]
+
+# # User input
 user_choice = int(
     input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")
 )
+print(image[user_choice])
 
-image = ["rock", "paper", "scissors"]
+
+# computer choice
+choices = ["rock", "paper", "scissors"]
+choice = len(choices) - 1
+computer_choice = random.randint(0, choice)
+print(image[computer_choice])
