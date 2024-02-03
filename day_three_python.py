@@ -118,10 +118,15 @@ print("Welcome to treasure island! Let's start the game")
 print("Your mission is find the treasure")
 print("You see two door. Do you into the Left or Right?")
 answer_1 = input()
-if answer_1 == "Right":
-    print("You fall into a hole and die. Good Game.")
-else:
+if answer_1 == "Left":
     print("You chose the right door! Nice!")
-print(
-    "You see a door. But it is you have to cross a River. Do you wait fot a boat or do you swim to it?"
-)
+    print(
+        "You see a door. But it is you have to cross a River. Do you wait or do you swim to it?"
+    )
+    answer_2 = input()
+    if answer_2 == "Wait":
+        print("A boat came and took you to the door.")
+    else:
+        print("As you swam a got a cramp and drowned. Good Game!")
+else:
+    print("You fall into a hole and die. Good Game.")
