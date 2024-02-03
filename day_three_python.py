@@ -126,6 +126,16 @@ if answer_1 == "Left":
     answer_2 = input()
     if answer_2 == "Wait":
         print("A boat came and took you to the door.")
+        print(
+            "As you continue you spot three doors. A Red door. A Yellow door. And a Blue door. Which of the three do you go through. "
+        )
+        answer_3 = input()
+        if answer_3 == "Yellow":
+            print("You found the treasure. You Win!")
+        elif answer_3 == "Red":
+            print("You get burned to death. Game Over.")
+        else:
+            print("You got clapped but the monster. Game Over.")
     else:
         print("As you swam a got a cramp and drowned. Good Game!")
 else:
