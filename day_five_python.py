@@ -146,11 +146,22 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 # Eazy Level - Order not randomised:
 # e.g. 4 letter, 2 symbol, 2 number = JduE&!91
+# letters
 letter = len(letters) - 1
 password = ""
 for abc in range(1, nr_letters + 1):
     chose_letter = random.randint(0, letter)
     password = password + letters[int(chose_letter)]
 print(password)
+
+# symbols
+symbol = len(symbols) - 1
+symbols_password = ""
+for symbol_ in range(1, nr_symbols + 1):
+    chose_symbol = random.randint(0, symbol)
+    symbols_password = symbols_password + symbols[int(chose_symbol)]
+print(symbols_password)
+
+
 # Hard Level - Order of characters randomised:
 # e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
