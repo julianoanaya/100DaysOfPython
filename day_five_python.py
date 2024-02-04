@@ -27,3 +27,16 @@ for student in student_heights:
 print(f"number of students = {number_of_student}")
 average = total_height / number_of_student
 print(f"average height = {round(average)}")
+
+
+# Input a list of student scores
+student_scores = input().split()
+for n in range(0, len(student_scores)):
+    student_scores[n] = int(student_scores[n])
+
+# Write your code below this row 👇
+base_score = 0
+for scores in student_scores:
+    if base_score <= scores:
+        base_score = scores
+print(f"The highest score in the class is: {base_score}")
