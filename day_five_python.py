@@ -162,6 +162,15 @@ for symbol_ in range(1, nr_symbols + 1):
     symbols_password = symbols_password + symbols[int(chose_symbol)]
 print(symbols_password)
 
+# number
+number = len(numbers) - 1
+numbers_password = ""
+for number_ in range(1, nr_numbers + 1):
+    chose_number = random.randint(0, number)
+    numbers_password = numbers_password + numbers[int(chose_symbol)]
+print(numbers_password)
+
+print(f"Your password is {password}{symbols_password}{numbers_password}")
 
 # Hard Level - Order of characters randomised:
 # e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
