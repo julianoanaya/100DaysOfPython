@@ -40,3 +40,10 @@ for scores in student_scores:
     if base_score <= scores:
         base_score = scores
 print(f"The highest score in the class is: {base_score}")
+
+# for loop w/ range
+for number in range(
+    1,
+    10,
+):
+    print(number)
