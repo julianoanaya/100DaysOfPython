@@ -167,7 +167,7 @@ number = len(numbers) - 1
 numbers_password = ""
 for number_ in range(1, nr_numbers + 1):
     chose_number = random.randint(0, number)
-    numbers_password = numbers_password + numbers[int(chose_symbol)]
+    numbers_password = numbers_password + numbers[int(chose_number)]
 print(numbers_password)
 
 print(f"Your password is {password}{symbols_password}{numbers_password}")
