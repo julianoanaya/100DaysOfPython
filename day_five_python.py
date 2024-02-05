@@ -174,3 +174,12 @@ print(f"Your password is {password}{symbols_password}{numbers_password}")
 
 # Hard Level - Order of characters randomised:
 # e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+# randomized_password = password + symbols_password + numbers_password
+# list_randomized_passwords = list(randomized_password)
+# new_password = ""
+# print(list_randomized_passwords)
+# random_password = len(list_randomized_passwords) - 1
+# for password_ in range(1, random_password + 1):
+#     chosen_password = random.list_randomized_passwords[random_password])
+#     new_password = new_password + list_randomized_passwords[int(chose_symbol)]
+# print(new_password)
