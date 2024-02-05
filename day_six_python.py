@@ -47,3 +47,19 @@ my_function()
 # move()
 # turn_right()
 # move()
+
+
+def move_and_jump_reset():
+    move()
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+
+
+jumps = 6
+while at_goal() != True:
+    move_and_jump_reset()
