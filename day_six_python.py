@@ -63,3 +63,25 @@ def move_and_jump_reset():
 jumps = 6
 while at_goal() != True:
     move_and_jump_reset()
+
+
+def jump():
+    if wall_in_front():
+        turn_left()
+        move()
+        while wall_on_right():
+            move()
+        turn_right()
+        move()
+        turn_right()
+        move()
+        while front_is_clear():
+            move()
+        turn_left()
+
+
+while not at_goal():
+    if front_is_clear():
+        move()
+    else:
+        jump()
