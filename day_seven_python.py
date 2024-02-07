@@ -31,3 +31,11 @@ guess = input("Guess a letter: ").lower()
 for letter in chosen_word:
     display.append("_")
 print(display)
+
+# TODO-2: - Loop through each position in the chosen_word;
+# If the letter at that position matches 'guess' then reveal that letter in the display at that position.
+# e.g. If the user guessed "p" and the chosen word was "apple", then display should be ["_", "p", "p", "_", "_"].
+for position in range(len(chosen_word)):
+    letter = chosen_word[position]
+    if letter == guess:
+        display[position] = letter
