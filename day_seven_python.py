@@ -149,6 +149,7 @@ while not end_of_game:
     # Then reduce 'lives' by 1.
     # If lives goes down to 0 then the game should stop and it should print "You lose."
     if guess not in chosen_word:
+        print(f"You guessed {guess}, that's not in the word. You lose a life.")
         lives -= 1
         if lives == 0:
             end_of_game = True
