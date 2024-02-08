@@ -20,3 +20,12 @@ def greet_with_name(name):
 
 
 greet_with_name("Angela")
+
+
+# function with more an 1 input
+def greet_with(name, location):
+    print(f"Hello {name}")
+    print(f"What is it like in {location}?")
+
+
+greet_with("Angela", "London")
