@@ -29,3 +29,12 @@ def greet_with(name, location):
 
 
 greet_with("Angela", "London")
+
+
+# function with keyword arguments
+def greet_with(name, location):
+    print(f"Hello {name}")
+    print(f"What is it like in {location}?")
+
+
+greet_with(location="London", name="Booby")
