@@ -19,3 +19,8 @@ print(programming_dictionary)
 # edit an item in a dictionary
 programming_dictionary["Bug"] = "A moth in your computer."
 print(programming_dictionary)
+
+# loop through a dictionary
+for key in programming_dictionary:
+    print(key)
+    print(programming_dictionary[key])
