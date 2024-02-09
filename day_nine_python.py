@@ -53,3 +53,9 @@ for key in student_scores:
 
 # 🚨 Don't change the code below 👇
 print(student_grades)
+
+# Nesting a list in a dictionary
+travel_log = {
+    "France": ["Paris", "Lille", "Dijon"],
+    "Germany": ["Berlin", "Hamburg", "Stuttgart"],
+}
