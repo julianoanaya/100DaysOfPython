@@ -11,3 +11,7 @@ print(programming_dictionary)
 
 # create an empty dictionary
 empty_dictionary = {}
+
+# wipe an existing dictionary
+programming_dictionary = {}
+print(programming_dictionary)
