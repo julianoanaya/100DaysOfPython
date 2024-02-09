@@ -3,3 +3,4 @@ programming_dictionary = {
     "Function": "A piece of code that you can easily call over and over again.",
     "Loop": "The action of doing something over and over again.",
 }
+print(programming_dictionary["Bug"])
