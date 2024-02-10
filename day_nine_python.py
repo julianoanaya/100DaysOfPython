@@ -118,3 +118,34 @@ def add_new_country(name, times_visited, cities_visited):
 add_new_country(country, visits, list_of_cities)
 print(f"I've been to {travel_log[2]['country']} {travel_log[2]['visits']} times.")
 print(f"My favourite city was {travel_log[2]['cities'][0]}.")
+
+
+from replit import clear
+from art import logo
+#HINT: You can call clear() to clear the output in the console.
+print(logo)
+print("Welcome to secret auction program.")
+
+bidders = {}
+
+name = input("What is your name?: ")
+price = int(input("What's your bid?: $"))
+more_bidders = input("Are there any other bidders? Type 'yes' or 'no'.")
+bidders[name] = price
+# print(bidders)
+
+
+while more_bidders == "yes":
+  clear()
+  name = input("What is your name?: ")
+  price = int(input("What's your bid?: $"))
+  bidders[name] = price
+  more_bidders = input("Are there any other bidders? Type 'yes' or 'no'.")
+print(bidders)
+
+max_bid = 0
+for bidder in bidders:
+  if bidders[bidder] > max_bid:
+    max_bid = bidders[bidder]
+    winner = bidder
+print(f"The winner is {winner} with a bid of ${max_bid}")
