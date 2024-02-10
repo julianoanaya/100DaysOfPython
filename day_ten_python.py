@@ -15,6 +15,8 @@ print(formatted_string)
 
 
 def format_name(f_name, l_name):
+    """Take a first and last name and format it to return
+    the title case version of the name."""
     if f_name == "" or l_name == "":
         return "You didn't provide valid inputs."
     formatted_f_name = f_name.title()
@@ -50,7 +52,7 @@ def days_in_month(year, month):
         return month_days[month - 1]
 
 
-# 🚨 Do NOT change any of the code belo 
+# 🚨 Do NOT change any of the code bel 
 year = int(input())  # Enter a year
 month = int(input())  # Enter a month
 days = days_in_month(year, month)
