@@ -52,7 +52,7 @@ def days_in_month(year, month):
         return month_days[month - 1]
 
 
-# 🚨 Do NOT change any of the code b 
+# 🚨 Do NOT change any of the cod 
 year = int(input())  # Enter a year
 month = int(input())  # Enter a month
 days = days_in_month(year, month)
@@ -84,3 +84,17 @@ def multiply(n1, n2):
 # divide
 def divide(n1, n2):
     return n1 / n2
+
+
+operations = {
+    "+": add,
+    "-": subtract,
+    "*": multiply,
+    "/": divide,
+}
+num1 = int(input("What's the first number?: "))
+
+num2 = int(input("What's the second number?: "))
+for symbol in operations:
+    print(f"{symbol}")
+operation_symbol = input("Pick an operation from the line above: ")
