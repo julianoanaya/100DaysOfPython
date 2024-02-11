@@ -117,11 +117,11 @@ def add_new_country(name, times_visited, cities_visited):
 # Do not change the code below 👇
 add_new_country(country, visits, list_of_cities)
 print(f"I've been to {travel_log[2]['country']} {travel_log[2]['visits']} times.")
-print(f"My favourite city was {travel_log[2]['cities'][0]}.")
+print(f"My favorite city was {travel_log[2]['cities'][0]}.")
 
 
-from replit import clear
-from art import logo
+# from relit import clear
+# from art import logo
 #HINT: You can call clear() to clear the output in the console.
 print(logo)
 print("Welcome to secret auction program.")
