@@ -52,8 +52,35 @@ def days_in_month(year, month):
         return month_days[month - 1]
 
 
-# 🚨 Do NOT change any of the code bel 
+# 🚨 Do NOT change any of the code b 
 year = int(input())  # Enter a year
 month = int(input())  # Enter a month
 days = days_in_month(year, month)
 print(days)
+
+
+from art import logo
+
+print(logo)
+
+# calculator
+
+
+# add
+def add(n1, n2):
+    return n1 + n2
+
+
+# subtract
+def subtract(n1, n2):
+    return n1 - n2
+
+
+# multiply
+def multiply(n1, n2):
+    return n1 * n2
+
+
+# divide
+def divide(n1, n2):
+    return n1 / n2
