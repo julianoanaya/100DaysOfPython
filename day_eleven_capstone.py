@@ -8,3 +8,12 @@ for stating_hand in range(1, 3):
     random_card = random.choice(cards)
     user_cards.append(random_card)
 print(user_cards)
+user_score = []
+
+
+computer_hand = []
+for computer_starting_hand in range(1, 3):
+    random_card = random.choice(cards)
+    computer_hand.append(random_card)
+print(computer_hand[0])
+computer_score = []
