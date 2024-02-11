@@ -8,12 +8,17 @@ for stating_hand in range(1, 3):
     random_card = random.choice(cards)
     user_cards.append(random_card)
 print(user_cards)
-user_score = []
 
+first_cards = user_cards[0]
+second_card = user_cards[1]
+score = first_cards + second_card
+print(score)
+
+
+# for current_user_score in range(1, user_hand + 1):
 
 computer_hand = []
 for computer_starting_hand in range(1, 3):
     random_card = random.choice(cards)
     computer_hand.append(random_card)
-print(computer_hand[0])
-computer_score = []
+# print(computer_hand[0])
