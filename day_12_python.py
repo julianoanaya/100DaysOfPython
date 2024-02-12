@@ -4,8 +4,8 @@ enemies = 1
 
 
 def increase_enemies():
-    enemies = 2
-    print(f"enemies inside function: {enemies}")
+  enemies = 2
+  print(f"enemies inside function: {enemies}")
 
 
 increase_enemies()
@@ -41,3 +41,11 @@ def create_enemy():
   if game_level<5:
     new_enemy=enemies[0]
   print(new_enemy)
+  
+def increase_enemies():
+  print(f"enemies inside function: {enemies}")
+  return enemies+1
+
+
+enemies = increase_enemies()
+print(f"enemies outside function: {enemies}")
