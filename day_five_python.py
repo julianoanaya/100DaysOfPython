@@ -154,6 +154,7 @@ for abc in range(1, nr_letters + 1):
     password = password + letters[int(chose_letter)]
 print(password)
 
+
 # symbols
 symbol = len(symbols) - 1
 symbols_password = ""
