@@ -35,12 +35,31 @@ if hit == "y":
     random_card = random.choice(cards)
     user_cards.append(random_card)
     score = 0
+    check_if_11_score = 0
     for user_single_card in user_cards:
         score += user_single_card
+    print(f"Your cards: {user_cards}, current score: {score}")
     if score > 21:
         for check_if_user_has_11 in range(len(user_cards)):
             if user_cards[check_if_user_has_11] == 11:
                 user_cards[check_if_user_has_11] = 1
+                check_if_11_score += user_single_card
+                if score > 21:
+                    print("You lose")
+                    print(f"Your final hand: {user_cards}, final score: {score}")
+                    hit = "n"
+                score = check_if_11_score
+
+        print(f"Your hand is: {user_cards}, your score is {score}")
+    elif score < 21:
+        hit = input("type 'y' to get another card, type 'n' to pass: ")
+    elif score == 21:
+        print("You win")
+        hit = "n"
+    else:
+        hit = "n"
+
+
 print(user_cards)
 
 # else:
