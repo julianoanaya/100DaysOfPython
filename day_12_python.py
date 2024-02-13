@@ -60,17 +60,6 @@ import random
 EASY_LIVES = 10
 HARD_LIVES = 5
 # print(logo)
-print("Welcome to the Number Guessing Game!")
-print("I'm thinking of a number between 1 and 100.")
-
-
-def random_number():
-    rand_num = random.randint(1, 100)
-    return rand_num
-
-
-random_generated_number = random_number()
-print(f"The answer is {random_generated_number}")
 
 
 def check_answer(guess, answer, turns):
@@ -91,3 +80,26 @@ def setting_difficulty():
         return EASY_LIVES
     else:
         return HARD_LIVES
+
+
+def game():
+    print("Welcome to the Number Guessing Game!")
+    print("I'm thinking of a number between 1 and 100.")
+    answer = random.randint(1, 100)
+    print(f"The answer is {answer}")
+
+    turns = setting_difficulty()
+
+    guess = 0
+    while guess != answer:
+        print(f"You have {turns} attempts remaining to guess the number")
+        guess = print(int(input("Guess a number: ")))
+        turns = check_answer(guess, answer, turns)
+        if turns == 0:
+            print("You have ran out of attempts")
+            return
+        elif guess != answer:
+            print("guess again")
+
+
+game()
