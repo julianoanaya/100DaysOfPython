@@ -61,8 +61,6 @@ import random
 # print(logo)
 print("Welcome to the Number Guessing Game!")
 print("I'm thinking of a number between 1 and 100.")
-difficulty = input("Choose a difficulty: Type 'easy or 'hard: ")
-answer_number = 0
 
 
 def random_number():
@@ -70,8 +68,16 @@ def random_number():
     return rand_num
 
 
-print(random_number())
+random_generated_number = random_number()
+print(f"The answer is {random_generated_number}")
 
 
-def guess_number():
-    print(5)
+# difficulty = input("Choose a difficulty: Type 'easy or 'hard: ")
+def choosing_harder_difficulty(hard):
+    lives = 5
+    return lives
+
+
+def choosing_easier_difficulty(easy):
+    lives = 10
+    return lives
