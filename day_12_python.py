@@ -57,7 +57,8 @@
 import random
 
 # from art import logo
-
+EASY_LIVES = 10
+HARD_LIVES = 5
 # print(logo)
 print("Welcome to the Number Guessing Game!")
 print("I'm thinking of a number between 1 and 100.")
@@ -72,12 +73,21 @@ random_generated_number = random_number()
 print(f"The answer is {random_generated_number}")
 
 
-# difficulty = input("Choose a difficulty: Type 'easy or 'hard: ")
-def choosing_harder_difficulty(hard):
-    lives = 5
-    return lives
+def check_answer(guess, answer, turns):
+    if guess > answer:
+        print("Too high")
+        return turns - 1
+    elif guess < answer:
+        print("Too Low")
+        return turns - 1
+    else:
+        print("You got it! the answer was {answer}")
 
 
-def choosing_easier_difficulty(easy):
-    lives = 10
-    return lives
+def setting_difficulty():
+    difficulty = input("Choose a difficulty: Type 'easy or 'hard: ")
+
+    if difficulty == "easy":
+        return EASY_LIVES
+    else:
+        return HARD_LIVES
