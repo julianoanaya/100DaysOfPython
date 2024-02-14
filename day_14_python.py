@@ -315,7 +315,7 @@ def format_data(account):
     return f"{name}, a {description}, from {country}"
 
 
-def check_answer(guess, a_followers, b_foloowers):
+def check_answer(guess, a_followers, b_followers):
     if a_followers > b_followers:
         return guess == "a"
     else:
@@ -337,6 +337,19 @@ def game():
         print(f"Compare A: {format_data(a_account)}")
         print(f"Compare A: {format_data(a_account)}")
         guess = input("Who has more followers? Type 'A' or 'B'").lower()
+        a_account_followers = a_account["follower_count"]
+        b_account_followers = b_account["follower_count"]
+        is_correct = check_answer(guess, a_account_followers, b_account_followers)
+
+        if is_correct:
+            score += 1
+            print(f"Your right!. Your current score is {score}")
+        else:
+            should_game_continue = False
+            print(f"You got it wrong! You lose. Your score is: {score}")
+
+
+game()
 
 
 # print(format_data(get_random_account()))
