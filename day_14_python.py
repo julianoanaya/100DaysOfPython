@@ -315,4 +315,20 @@ def format_data(account):
     return f"{name}, a {description}, from {country}"
 
 
-print(format_data(get_random_account()))
+def game():
+    a = get_random_account()
+    b = get_random_account()
+    print(a)
+    print(b)
+    a_followers = a["follower_count"]
+    b_followers = b["follower_count"]
+    print(a_followers)
+    print(b_followers)
+    a = format_data(a)
+    b = format_data(b)
+    print(a)
+    print(b)
+
+
+# print(format_data(get_random_account()))
+print(game())
