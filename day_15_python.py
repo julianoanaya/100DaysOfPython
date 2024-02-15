@@ -39,3 +39,11 @@ def is_resource_sufficient(order_ingredients):
             print(f"Sorry there is not enough {item}.")
             return False
     return True
+
+
+def process_coin():
+    total = int(input("How many quarters are you inserting:")) * 0.25
+    total += int(input("How many dimes are you inserting:")) * 0.10
+    total += int(input("How many quarters are you inserting:")) * 0.05
+    total += int(input("How many quarters are you inserting:")) * 0.01
+    return total
