@@ -5,4 +5,3 @@ print(timmy)
 
 my_screen = Screen()
 print(my_screen.canvheight)
-print("hello world")
