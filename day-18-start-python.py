@@ -10,18 +10,18 @@
 # import turtle as t
 # tim = t.Turtle()
 
-from turtle import Turtle, Screen
+from turtle import Screen
+import turtle as t
 
-timmy_the_turtle = Turtle()
-timmy_the_turtle.shape("turtle")
-timmy_the_turtle.color("violet")
-timmy_the_turtle.forward(100)
-timmy_the_turtle.right(90)
+tim = t.Turtle()
+tim.shape("turtle")
+tim.color("violet")
 
-for i in range(4):
-    timmy_the_turtle.forward(100)
-    timmy_the_turtle.right(90)
-    print("Hello")
+for i in range(15):
+    tim.forward(10)
+    tim.penup()
+    tim.forward(10)
+    tim.pendown()
 
 
 screen = Screen()
