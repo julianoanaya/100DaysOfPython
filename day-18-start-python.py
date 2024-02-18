@@ -25,18 +25,29 @@ g = random.randint(1, 255)
 b = random.randint(1, 255)
 tim.color(r, g, b)
 
-while True:
+# while True:
+#     for _ in range(num_sides):
+#         angle = 360 / num_sides
+#         tim.forward(100)
+#         tim.right(angle)
+#         tim.color(r, g, b)
+#     else:
+#         num_sides += 1
+#         r = random.randint(1,255)
+#         g = random.randint(1,255)
+#         b = random.randint(1,255)
+#         if num_sides > 10:
+#             break
+
+
+def draw_shape(num_sides):
+    angle = 360 / num_sides
     for _ in range(num_sides):
-        angle = 360 / num_sides
         tim.forward(100)
         tim.right(angle)
-        tim.color(r, g, b)
-    else:
-        num_sides += 1
-        r = random.randint(1, 255)
-        g = random.randint(1, 255)
-        b = random.randint(1, 255)
-        if num_sides > 10:
-            break
+
+
+for shape_side_n in range(3, 11):
+    draw_shape(shape_side_n)
 
 screen.exitonclick()
