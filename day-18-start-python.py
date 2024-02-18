@@ -1,3 +1,15 @@
+# Have to write turtle.Turtle() everytime
+# import turtle
+# tim = turtle.Turtle()
+
+# imports the whole module
+# from turtle import *
+# forward() - confusing just seeing this - hard to read
+
+# shorten .turtle to .t
+# import turtle as t
+# tim = t.Turtle()
+
 from turtle import Turtle, Screen
 
 timmy_the_turtle = Turtle()
