@@ -40,14 +40,26 @@ tim.color(r, g, b)
 #             break
 
 
-def draw_shape(num_sides):
-    angle = 360 / num_sides
-    for _ in range(num_sides):
-        tim.forward(100)
-        tim.right(angle)
+# def draw_shape(num_sides):
+#     angle = 360 / num_sides
+#     for _ in range(num_sides):
+#         tim.forward(100)
+#         tim.right(angle)
 
 
-for shape_side_n in range(3, 11):
-    draw_shape(shape_side_n)
+# for shape_side_n in range(3, 11):
+#     draw_shape(shape_side_n)
+
+tim.speed(800)
+tim.pensize(3)
+forward_amount = [5, 10, 15]
+direction = [0, 90, 180, 270]
+for _ in range(1, 200):
+    r = random.randint(1, 255)
+    g = random.randint(1, 255)
+    b = random.randint(1, 255)
+    tim.color(r, g, b)
+    tim.forward(random.choice(forward_amount))
+    tim.setheading(random.choice(direction))
 
 screen.exitonclick()
