@@ -12,17 +12,31 @@
 
 from turtle import Screen
 import turtle as t
+import random
+
 
 tim = t.Turtle()
 tim.shape("turtle")
-tim.color("violet")
-
-for i in range(15):
-    tim.forward(10)
-    tim.penup()
-    tim.forward(10)
-    tim.pendown()
-
-
+num_sides = 3
 screen = Screen()
+screen.colormode(255)
+r = random.randint(1, 255)
+g = random.randint(1, 255)
+b = random.randint(1, 255)
+tim.color(r, g, b)
+
+while True:
+    for _ in range(num_sides):
+        angle = 360 / num_sides
+        tim.forward(100)
+        tim.right(angle)
+        tim.color(r, g, b)
+    else:
+        num_sides += 1
+        r = random.randint(1, 255)
+        g = random.randint(1, 255)
+        b = random.randint(1, 255)
+        if num_sides > 10:
+            break
+
 screen.exitonclick()
