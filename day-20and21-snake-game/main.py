@@ -1,4 +1,5 @@
 from turtle import Screen, Turtle
+import time
 
 screen = Screen()
 screen.setup(600, 600)
@@ -23,11 +24,9 @@ for position in starting_position:
     new_segment.goto(position)
     segments.append(new_segment)
 
+
 game_is_on = True
 
 while game_is_on:
-    for seg in segments:
-        seg.forward(20)
-
-
-screen.exitonclick()
+    screen.update()
+    time.sleep(0.1)
