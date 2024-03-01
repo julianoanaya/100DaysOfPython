@@ -9,9 +9,23 @@ screen.title("PONG")
 paddle = Turtle()
 paddle.shape("square")
 paddle.color("white")
-paddle.turtlesize(8.5, 2.0)
+paddle.left(90)
+paddle.turtlesize(0.5, 3.5)
 paddle.penup()
 paddle.setpos(350, 0)
 
 screen.listen()
+
+
+def move_up():
+    paddle.forward(10)
+
+
+def move_down():
+    paddle.backward(10)
+
+
+screen.listen()
+screen.onkey(fun=move_up, key="Up")
+screen.onkey(fun=move_down, key="Down")
 screen.exitonclick()
