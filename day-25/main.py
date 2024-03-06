@@ -20,3 +20,12 @@ import pandas
 
 data = pandas.read_csv("weather_data.csv")
 print(data)
+data_dict = data.to_dict()
+print(data_dict)
+temp_list = data["temp"].to_list()
+print(temp_list)
+# sum = 0
+# for temp in temp_list:
+#     sum += temp
+# average = sum / len(temp_list)
+# print(average)
