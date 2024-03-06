@@ -29,3 +29,8 @@ print(temp_list)
 #     sum += temp
 # average = sum / len(temp_list)
 # print(average)
+
+# Get data in Columns
+
+print(data["condition"])
+print(data.condition)
