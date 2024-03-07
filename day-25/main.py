@@ -46,3 +46,11 @@ cinnamon_squirrel_count = len(data[data["Primary Fur Color"] == "Cinnamon"])
 print(grey_squirrel_count)
 print(black_squirrel_count)
 print(cinnamon_squirrel_count)
+
+data_dict = {
+    "Fur_Colors": ["grey", "red", "black"],
+    "Count": [grey_squirrel_count, red_squirrel_count, black_squirrel_count],
+}
+data = pandas.DataFrame(data_dict)
+data.to_csv("counts_of_squirrels_of_different_colors.csv")
+# # print(data[data.day == "Monday"])
