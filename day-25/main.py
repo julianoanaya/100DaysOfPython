@@ -34,3 +34,15 @@ print(temp_list)
 
 print(data["condition"])
 print(data.condition)
+
+
+import pandas
+
+data = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
+grey_squirrel_count = len(data[data["Primary Fur Color"] == "Gray"])
+black_squirrel_count = len(data[data["Primary Fur Color"] == "Black"])
+cinnamon_squirrel_count = len(data[data["Primary Fur Color"] == "Cinnamon"])
+
+print(grey_squirrel_count)
+print(black_squirrel_count)
+print(cinnamon_squirrel_count)
