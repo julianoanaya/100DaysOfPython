@@ -43,3 +43,12 @@ result = [list for list in stripped_number if list in number_file_2]
 
 # Write your code above 👆
 print(result)
+
+sentence = input()
+# 🚨 Don't change code above 👆
+# Write your code below 👇
+words = sentence.split()
+dict = {letter: len(letter) for letter in words}
+print(dict)
+
+# print(result)
